@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap y Estilos -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href='css/rotating-card.css' rel='stylesheet' />
+    <link href="css/pe-icon-7-stroke.css" rel="stylesheet" />
+
+    <!-- Librerías de iconos-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Veterinaria Des Petites.</title>
+
+    <style>
+        #sidebar {
+            width: 20%;
+            height: 1319.17px;
+            background: #343a40;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Vertical Principal -->
+    <div class="d-flex">
+        <div id="sidebar">
+            <div class="p-2">
+                <a href="#" class="navbar-brand text-center text-light w-100 p-4 border-bottom">
+                    <i class="fas fa-dog mr-3" aria-hidden="true"></i>Les Petites.
+                </a>
+            </div>
+            <div id="sidebar-accordion">
+                <div class="list-group">
+                    <a href="#dashboard-items" data-toggle="collapse" aria-expanded="false"
+                        class="list-group-item list-group-item-action bg-dark text-light">
+                        <i class="fas fa-paw mr-3" aria-hidden="true"></i>Adopciones
+                    </a>
+                    <div id="dashboard-items">
+                        <a href="Disponibles.html"
+                            class="list-group-item list-group-item-action bg-dark text-light pl-5">
+                            <i class="far fa-clipboard mr-3" aria-hidden="true"></i>Disponibles
+                        </a>
+                        <a href="Solicitudes.html"
+                            class="list-group-item list-group-item-action bg-dark text-light pl-5">
+                            <i class="fas fa-clipboard mr-3" aria-hidden="true"></i>Solicitudes
+                        </a>
+                        <a href="Seguimientos.html"
+                            class="list-group-item list-group-item-action bg-dark text-light pl-5">
+                            <li class="nav-item active">
+                                <i class="fas fa-tasks mr-3" aria-hidden="true"></i>Seguimientos
+                            </li>
+                        </a>
+                    </div>
+                    <a href="#profile-items" data-toggle="collapse" aria-expanded="false"
+                        class="list-group-item list-group-item-action bg-dark text-light">
+                        <i class="fa fa-user mr-3" aria-hidden="true"></i>Inventario
+                    </a>
+                    <div id="profile-items" class="collapse">
+                        <a href="Perros.html" class="list-group-item list-group-item-action bg-dark text-light pl-5">
+                            <i class="fas fa-dog mr-3" aria-hidden="true"></i>Perros
+                        </a>
+                        <a href="Gatos.html" class="list-group-item list-group-item-action bg-dark text-light pl-5">
+                            <i class="fas fa-cat mr-3" aria-hidden="true"></i>Gatos
+                        </a>
+                        <a href="Otros.html" class="list-group-item list-group-item-action bg-dark text-light pl-5">
+                            <i class="fas fa-dove mr-3" aria-hidden="true"></i>Otros
+                        </a>
+                    </div>
+                    <a href="Carrito.html" class="list-group-item list-group-item-action bg-dark text-light">
+                        <i class="fa fa-shopping-cart mr-3" aria-hidden="true"></i>Carrito de Compras
+                    </a>
+                    <a href="#setting-items" data-toggle="collapse" aria-expanded="false"
+                        class="list-group-item list-group-item-action bg-dark text-light">
+                        <i class="fa fa-cog mr-3" aria-hidden="true"></i>Configuración
+                    </a>
+                    <div id="setting-items" class="collapse">
+                        <div class="d-flex flex-row text-center">
+                            <a href="AgregarCli.html" class="list-group-item list-group-item-action bg-dark text-light">
+                                Agregar
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action bg-dark text-light">
+                                Salir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Horizontal Principal -->
+        <div class="content w-100">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-xl">
+                    <div class="collapse navbar-collapse" id="navbarsExample07XL">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="Disponibles.html">Inicio <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Clientes.html">Clientes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Proveedor.html">Proveedores</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdown07XL" data-toggle="dropdown"
+                                    aria-expanded="false">Pedidos</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdown07XL">
+                                    <a class="dropdown-item" href="Entregados.html">Entregados</a>
+                                    <a class="dropdown-item" href="Espera.html">En espera</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-md-0">
+                            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+            <!--Inicio Sección Cards-->
+            <section class="p-3">
+                <div class="container">
+                    <div class="row">
+                        <!--Tarjeta 1-->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="images/casa.jpg" />
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="images/perrito1.jpg" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Bruno</h3>
+                                                <p class="text-center">Bulldog Inglés</p>
+                                                <p class="text-center">Macho<br></p>
+                                                <p class="text-center">5 años</p>
+                                            </div>
+                                            <div class="footer">
+                                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                                    <i class="fa fa-mail-forward"></i> Descripción
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">Fecha de adopción: 05/05/2019</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Adoptante: Juan José Vargas</h4>
+                                                <p class="text-center">Cédula: 1-0981-1102</p>
+                                                <p class="text-center">Edad: 30</p>
+                                                <p class="text-center">Dirección: Guadalupe, San José</p>
+                                                <p class="text-center">Teléfono: 8809-81-09</p>
+                                                <p class="text-center">Ocupación: Profesor</p>                                             
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn btn-simple" rel="tooltip" title="Flip Card"
+                                                onclick="rotateCard(this)">
+                                                <i class="fa fa-reply"></i> Atrás
+                                            </button>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                        </div> <!-- end col sm 3 -->
+
+                        <!--Tarjeta 2-->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="images/casa.jpg" />
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="images/perrito2.jpg" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Coco</h3>
+                                                <p class="text-center">Jack Russell terrier</p>
+                                                <p class="text-center">Macho<br></p>
+                                                <p class="text-center">6 meses</p>
+                                            </div>
+                                            <div class="footer">
+                                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                                    <i class="fa fa-mail-forward"></i> Descripción
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">Fecha de adopción: 21/09/2020</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Adoptante: Karla Solano</h4>
+                                                <p class="text-center">Cédula: 3-0129-0129</p>
+                                                <p class="text-center">Edad: 28</p>
+                                                <p class="text-center">Dirección: Paraíso, Cartago</p>
+                                                <p class="text-center">Teléfono: 8820-90-50</p>
+                                                <p class="text-center">Ocupación: Contadora</p>                                             
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn btn-simple" rel="tooltip" title="Flip Card"
+                                                onclick="rotateCard(this)">
+                                                <i class="fa fa-reply"></i> Atrás
+                                            </button>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                        </div> <!-- end col sm 3 -->
+
+                        <!--Tarjeta 3-->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="images/casa.jpg" />
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="images/perrito3.jpg" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Rocky</h3>
+                                                <p class="text-center"> Bull Terrier</p>
+                                                <p class="text-center">Macho<br></p>
+                                                <p class="text-center">1 año</p>
+                                            </div>
+                                            <div class="footer">
+                                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                                    <i class="fa fa-mail-forward"></i> Descripción
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">Fecha de adopción: 31/01/2021</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Adoptante: Eduardo Fallas</h4>
+                                                <p class="text-center">Cédula: 4-0131-0122</p>
+                                                <p class="text-center">Edad: 35</p>
+                                                <p class="text-center">Dirección: San Antonio, Heredia</p>
+                                                <p class="text-center">Teléfono: 8545-55-25</p>
+                                                <p class="text-center">Ocupación: Fotógrafo</p>                                             
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn btn-simple" rel="tooltip" title="Flip Card"
+                                                onclick="rotateCard(this)">
+                                                <i class="fa fa-reply"></i> Atrás
+                                            </button>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                        </div> <!-- end col sm 3 -->
+                    </div>
+
+                    <div class="row">
+                        <!--Tarjeta 4-->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="images/casa.jpg" />
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="images/perrito4.jpg" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Nala</h3>
+                                                <p class="text-center">Pinscher</p>
+                                                <p class="text-center">Hembra<br></p>
+                                                <p class="text-center">7 años</p>
+                                            </div>
+                                            <div class="footer">
+                                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                                    <i class="fa fa-mail-forward"></i> Descripción
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">Fecha de adopción: 08/10/2019</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Adoptante: Ana María Cascante</h4>
+                                                <p class="text-center">Cédula: 3-0123-0923</p>
+                                                <p class="text-center">Edad: 70</p>
+                                                <p class="text-center">Dirección: Tejar, Cartago</p>
+                                                <p class="text-center">Teléfono: 8401-23-08</p>
+                                                <p class="text-center">Ocupación: Jubilada</p>                                             
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn btn-simple" rel="tooltip" title="Flip Card"
+                                                onclick="rotateCard(this)">
+                                                <i class="fa fa-reply"></i> Atrás
+                                            </button>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                        </div> <!-- end col sm 3 -->
+
+                        <!--Tarjeta 5-->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="images/casa.jpg" />
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="images/perrito5.jpg" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Fóxter</h3>
+                                                <p class="text-center">Sharpei</p>
+                                                <p class="text-center">Macho<br></p>
+                                                <p class="text-center">2 años</p>
+                                            </div>
+                                            <div class="footer">
+                                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                                    <i class="fa fa-mail-forward"></i> Descripción
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">Fecha de adopción: 14/07/2020</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Adoptante: Valentina Salazar</h4>
+                                                <p class="text-center">Cédula: 4-0273-0120</p>
+                                                <p class="text-center">Edad: 40</p>
+                                                <p class="text-center">Dirección: Guararí, Heredia</p>
+                                                <p class="text-center">Teléfono: 8825-83-02</p>
+                                                <p class="text-center">Ocupación: Nutricionista</p>                                             
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn btn-simple" rel="tooltip" title="Flip Card"
+                                                onclick="rotateCard(this)">
+                                                <i class="fa fa-reply"></i> Atrás
+                                            </button>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                        </div> <!-- end col sm 3 -->
+
+                        <!--Tarjeta 6-->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="images/casa.jpg" />
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="images/perrito6.jpg" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Milo</h3>
+                                                <p class="text-center">Pug</p>
+                                                <p class="text-center">Macho<br></p>
+                                                <p class="text-center">1 año y 6 meses</p>
+                                            </div>
+                                            <div class="footer">
+                                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                                    <i class="fa fa-mail-forward"></i> Descripción
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">Fecha de adopción: 28/02/2021</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Adoptante: Marlon Sánchez</h4>
+                                                <p class="text-center">Cédula: 3-0125-0843</p>
+                                                <p class="text-center">Edad: 52</p>
+                                                <p class="text-center">Dirección: Taras, Cartago</p>
+                                                <p class="text-center">Teléfono: 8972-32-59</p>
+                                                <p class="text-center">Ocupación: Ingeniero</p>                                             
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn btn-simple" rel="tooltip" title="Flip Card"
+                                                onclick="rotateCard(this)">
+                                                <i class="fa fa-reply"></i> Atrás
+                                            </button>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                        </div> <!-- end col sm 3 -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+    <script src="js/card.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap y Estilos -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href='css/rotating-card.css' rel='stylesheet'/>
+    <link href="css/pe-icon-7-stroke.css" rel="stylesheet"/>
+    
+    <!-- Librerías de iconos-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Veterinaria Des Petites.</title>
+    
+    <style>
+        #sidebar {
+            width: 20%;
+            height: 100vh;
+            background: #343a40;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Vertical Principal -->
+    <div class="d-flex">
+        <div id="sidebar">
+            <div class="p-2">
+                <a href="#" class="navbar-brand text-center text-light w-100 p-4 border-bottom">
+                    <i class="fas fa-dog mr-3" aria-hidden="true"></i>Des Petites.
+                </a>
+            </div>
+            <div id="sidebar-accordion">
+                <div class="list-group">
+                    <a href="#dashboard-items" data-toggle="collapse" aria-expanded="false"
+                        class="list-group-item list-group-item-action bg-dark text-light">
+                        <i class="fas fa-paw mr-3" aria-hidden="true"></i>Adopciones
+                    </a>
+                    <div id="dashboard-items">
+                        <a href="Disponibles.html"
+                            class="list-group-item list-group-item-action bg-dark text-light pl-5">
+                            <li class="nav-item active">
+                                <i class="far fa-clipboard mr-3" aria-hidden="true"></i>Disponibles
+                            </li>
+                        </a>
+                        <a href="Solicitudes.html"
+                            class="list-group-item list-group-item-action bg-dark text-light pl-5">
+                            <i class="fas fa-clipboard mr-3" aria-hidden="true"></i>Solicitudes
+                        </a>
+                        <a href="Seguimientos.html"
+                            class="list-group-item list-group-item-action bg-dark text-light pl-5">
+                            <i class="fas fa-tasks mr-3" aria-hidden="true"></i>Seguimientos
+                        </a>
+                    </div>
+                    <a href="#profile-items" data-toggle="collapse" aria-expanded="false"
+                        class="list-group-item list-group-item-action bg-dark text-light">
+                        <i class="fa fa-user mr-3" aria-hidden="true"></i>Inventario
+                    </a>
+                    <div id="profile-items" class="collapse">
+                        <a href="Perros.html" class="list-group-item list-group-item-action bg-dark text-light pl-5">
+                            <i class="fas fa-dog mr-3" aria-hidden="true"></i>Perros
+                        </a>
+                        <a href="Gatos.html" class="list-group-item list-group-item-action bg-dark text-light pl-5">
+                            <i class="fas fa-cat mr-3" aria-hidden="true"></i>Gatos
+                        </a>
+                        <a href="Otros.html" class="list-group-item list-group-item-action bg-dark text-light pl-5">
+                            <i class="fas fa-dove mr-3" aria-hidden="true"></i>Otros
+                        </a>
+                    </div>
+                    <a href="Carrito.html" class="list-group-item list-group-item-action bg-dark text-light">
+                        <i class="fa fa-shopping-cart mr-3" aria-hidden="true"></i>Carrito de Compras
+                    </a>
+                    <a href="#setting-items" data-toggle="collapse" aria-expanded="false"
+                        class="list-group-item list-group-item-action bg-dark text-light">
+                        <i class="fa fa-cog mr-3" aria-hidden="true"></i>Configuración
+                    </a>
+                    <div id="setting-items" class="collapse">
+                        <div class="d-flex flex-row text-center">
+                            <a href="AgregarCli.html" class="list-group-item list-group-item-action bg-dark text-light">
+                                Agregar
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action bg-dark text-light">
+                                Salir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Horizontal Principal -->
+        <div class="content w-100">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-xl">
+                    <div class="collapse navbar-collapse" id="navbarsExample07XL">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="Disponibles.html">Inicio <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Clientes.html">Clientes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Proveedor.html">Proveedores</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdown07XL" data-toggle="dropdown"
+                                    aria-expanded="false">Pedidos</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdown07XL">
+                                    <a class="dropdown-item" href="Entregados.html">Entregados</a>
+                                    <a class="dropdown-item" href="Espera.html">En espera</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-md-0">
+                            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+            <!--Inicio Sección Cards-->
+            <section class="p-3">
+                <div class="container">
+                    <div class="row">
+                        <!--Tarjeta 1-->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="images/casa.jpg" />
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="images/images.jpg" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Tobby</h3>
+                                                <p class="text-center">Labrador Golden Retriever</p>
+                                                <p class="text-center">Macho<br></p>
+                                                <p class="text-center">"Este Retriever tiene una expresión amistosa y
+                                                    una simetría perfecta."</p>
+                                            </div>
+                                            <div class="footer">
+                                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                                    <i class="fa fa-mail-forward"></i> Descripción
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">"Tengo mucho amor que ofrecerte"</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">¿Cómo soy?</h4>
+                                                <p class="text-center">Tengo 5 años. Soy muy dócil y juguetón. Me
+                                                    encantan los niños y les doy mucho amor.</p>
+
+                                                <div class="stats-container">
+                                                    <div class="stats">
+                                                        <h4>Tamaño</h4>
+                                                        <p>
+                                                            59 cm
+                                                        </p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>Peso</h4>
+                                                        <p>
+                                                            33 kg
+                                                        </p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>Carácter</h4>
+                                                        <p>
+                                                            Dócil
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn btn-simple" rel="tooltip" title="Flip Card"
+                                                onclick="rotateCard(this)">
+                                                <i class="fa fa-reply"></i> Atrás
+                                            </button>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                        </div> <!-- end col sm 3 -->
+
+                        <!--Tarjeta 2-->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="images/casa.jpg" />
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="images/perro.jpg" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Fuffy</h3>
+                                                <p class="text-center">French Poodle</p>
+                                                <p class="text-center">Hembra<br></p>
+                                                <p class="text-center">"Se caracteriza por su inteligencia
+                                                    superior y capacidad de aprendizaje."</p>
+                                            </div>
+                                            <div class="footer">
+                                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                                    <i class="fa fa-mail-forward"></i> Descripción
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">"El amor es una palabra de cuatro patas"</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">¿Cómo soy?</h4>
+                                                <p class="text-center">Tengo 3 meses. Soy muy inteligente y tranquila.
+                                                    Me encanta que me chineen y me den amor.</p>
+
+                                                <div class="stats-container">
+                                                    <div class="stats">
+                                                        <h4>Tamaño</h4>
+                                                        <p>
+                                                            25 cm
+                                                        </p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>Peso</h4>
+                                                        <p>
+                                                            26 kg
+                                                        </p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>Carácter</h4>
+                                                        <p>
+                                                            Cariñosa
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn btn-simple" rel="tooltip" title="Flip Card"
+                                                onclick="rotateCard(this)">
+                                                <i class="fa fa-reply"></i> Atrás
+                                            </button>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                        </div> <!-- end col sm 3 -->
+
+                        <!--Tarjeta 3-->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="images/casa.jpg" />
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="images/perro2.jpg" />
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Ricks</h3>
+                                                <p class="text-center">Schnauzer</p>
+                                                <p class="text-center">Macho<br></p>
+                                                <p class="text-center">"Elegante, ágil y robusto, se caracteriza por su
+                                                    gran inteligencia y enorme lealtad."</p>
+                                            </div>
+                                            <div class="footer">
+                                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                                    <i class="fa fa-mail-forward"></i> Descripción
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">"Cuando te sientas solo no lo dudes, ven a buscarme,
+                                                ¡Siempre estaré listo para quererte y jugar!"</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">¿Cómo soy?</h4>
+                                                <p class="text-center">Tengo 1 mes y medio. Soy muy amigable. Me gusta
+                                                    jugar con los niños y otros perritos.</p>
+
+                                                <div class="stats-container">
+                                                    <div class="stats">
+                                                        <h4>Tamaño</h4>
+                                                        <p>
+                                                            7 cm
+                                                        </p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>Peso</h4>
+                                                        <p>
+                                                            2 kg
+                                                        </p>
+                                                    </div>
+                                                    <div class="stats">
+                                                        <h4>Carácter</h4>
+                                                        <p>
+                                                            Sociable
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn btn-simple" rel="tooltip" title="Flip Card"
+                                                onclick="rotateCard(this)">
+                                                <i class="fa fa-reply"></i> Atrás
+                                            </button>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                        </div> <!-- end col sm 3 -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    
+    <script src="js/card.js"></script>
+</body>
+
+</html>
